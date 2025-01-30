@@ -7,6 +7,8 @@ public class EnableDisable : MonoBehaviour
     public SpriteRenderer thisRender;
     public EnableDisable thisEnable;
     public GameObject go;
+    public AudioSource audioSource;
+    public AudioClip clip;
 
     void Update()
     {
@@ -21,7 +23,11 @@ public class EnableDisable : MonoBehaviour
         {
             //thisRender.enabled = true;
             //thisEnable.enabled = true;
-            go.SetActive(true);
+            if (audioSource.isPlaying == false)
+            {
+                go.SetActive(true);
+                audioSource.PlayOneShot(clip);
+            }
         }
     }
 }
