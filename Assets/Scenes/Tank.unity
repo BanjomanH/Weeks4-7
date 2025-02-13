@@ -513,7 +513,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7579eb75cd73044c8a2a02b866fc0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tankAppearance:
+  - {fileID: 21300000, guid: a845210e26d56d04d973a6bda65bdb68, type: 3}
+  - {fileID: 21300000, guid: bd26b83d90951984abdb3415076647ba, type: 3}
+  - {fileID: 21300000, guid: c57def5643e46ac44ba20adf8668a3e9, type: 3}
+  - {fileID: 21300000, guid: 92f5465da47436946bbd404f0794fcf1, type: 3}
+  tankRenderer: {fileID: 968520850}
   speed: 3
+  spriteSelected: 0
 --- !u!1 &1950258263
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950258264}
   - component: {fileID: 1950258265}
+  - component: {fileID: 1950258266}
   m_Layer: 0
   m_Name: BarrelRotate
   m_TagString: Untagged
@@ -562,6 +570,113 @@ MonoBehaviour:
   shell: {fileID: 3695491192092418284, guid: fc29df4dce3a1ba4687e64cd8d7cc0c9, type: 3}
   bulletSpeed: 2
   travelDistance: 5
+  shotAppearance:
+  - {fileID: 21300000, guid: 258dfe28e5daf6b4a8d491b8ef316535, type: 3}
+  - {fileID: 21300000, guid: 92d41f98b0ab24c458ac2a48331bead3, type: 3}
+  - {fileID: 21300000, guid: 2fde6b17d8f11cc41a83144ffbce22b3, type: 3}
+  - {fileID: 21300000, guid: 9eb49665f634d8f4c975d187e94c66eb, type: 3}
+  - {fileID: 21300000, guid: 625ecb8b5ecedb94896fcf85e9cc7b53, type: 3}
+  - {fileID: 21300000, guid: fb5141ee6b48a8c4297bea5d2a0b2b86, type: 3}
+  - {fileID: 21300000, guid: 5587c43bf40c13b42afef18edb892f5a, type: 3}
+  spriteSelected: 0
+  shotPlayer: {fileID: 1950258266}
+  shotSFX: {fileID: 8300000, guid: 9d71f9b5efa1ce54aa511d4f663d01fb, type: 3}
+--- !u!82 &1950258266
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950258263}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9d71f9b5efa1ce54aa511d4f663d01fb, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
