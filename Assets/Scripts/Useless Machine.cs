@@ -35,7 +35,7 @@ public class UselessMachine : MonoBehaviour
             timer = 0;
         }
 
-        if (timer > 0.46f && timer < 0.53f)
+        if (timer > 0.48f && timer < 0.52f)
         {
             isOn = false;
         }
@@ -56,7 +56,7 @@ public class UselessMachine : MonoBehaviour
             isOn = false;
             if (timer < 0.5)
             {
-                timer = 0.5f + timer;
+                timer = 1 - timer;
             }
         }
     }
