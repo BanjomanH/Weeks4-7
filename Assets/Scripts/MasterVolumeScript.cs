@@ -19,6 +19,5 @@ public class MasterVolumeScript : MonoBehaviour
 
         Instantiate(textBox);
         textBox.GetComponent<TextBox>().placeTextbox(buttonPos, tempAnswer);
-        Destroy(textBox, 6);
     }
 }
