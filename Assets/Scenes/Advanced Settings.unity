@@ -1255,8 +1255,9 @@ GameObject:
   m_Component:
   - component: {fileID: 178962356}
   - component: {fileID: 178962357}
+  - component: {fileID: 178962358}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1279,10 +1280,10 @@ RectTransform:
   - {fileID: 833446870}
   m_Father: {fileID: 1438755774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8379, y: 67.20159}
-  m_SizeDelta: {x: 311.7042, y: 49.044}
+  m_AnchorMin: {x: 0, y: 0.81000006}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.83789825, y: 26.701591}
+  m_SizeDelta: {x: 211.7042, y: 30.043999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178962357
 MonoBehaviour:
@@ -1324,10 +1325,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1346620839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 178962358}
+        m_TargetAssemblyTypeName: MasterVolumeScript, Assembly-CSharp
+        m_MethodName: whenPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 178962356}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &178962358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178962355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5c3a66fe6b9b94e90ce9f1102f4047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 5134138381450547407, guid: e0faad07e3c432b409f006b8c554daf0, type: 3}
+  responses:
+  - "\u201CTis I, Master Volume! The lord of setlandia!\u201D"
+  - "\u201CDecree 1 - All settings are below me!\u201D"
+  - "\u201CDecree 2 - I am always set to 100!\u201D"
+  - "\u201CDecree 3 - I shall not be edited by the peasantry!\u201D"
+  - "\u201CDecree 4 - No \u2018computer volume\u2019 shall usurp me!\u201D"
+  - "\u201CDecree 5 - Exclamation point after every setting!\u201D"
+  - "\u201CDecree 6 - Scratch degree 5.\u201D"
+  - "\u201CDecree 7 - All shall work in the useless mines!\u201D"
+  - "\u201CDecree 8 - None of the above!\u201D"
 --- !u!1 &190136295
 GameObject:
   m_ObjectHideFlags: 0
@@ -7609,10 +7645,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 178962356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 312, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346620839
 MonoBehaviour:
