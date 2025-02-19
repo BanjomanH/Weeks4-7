@@ -18,7 +18,7 @@ public class PanningScript : MonoBehaviour
             tempAnswer = responses[1];
         }
 
-        Instantiate(textBox);
         textBox.GetComponent<TextBox>().placeTextbox(buttonPos, tempAnswer);
+        Instantiate(textBox);
     }
 }
