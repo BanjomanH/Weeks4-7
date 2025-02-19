@@ -29,7 +29,7 @@ public class UselessMachine : MonoBehaviour
 
         if (timer != 0)
         {
-            timer += Time.deltaTime;
+            timer += Time.deltaTime * 2;
         } else if (timer > 1)
         {
             timer = 0;
@@ -56,7 +56,7 @@ public class UselessMachine : MonoBehaviour
             isOn = false;
             if (timer < 0.5)
             {
-                timer += 0.5f;
+                timer = 0.5f + timer;
             }
         }
     }
