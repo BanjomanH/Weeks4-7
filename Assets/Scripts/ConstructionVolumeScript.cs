@@ -9,15 +9,16 @@ using TMPro;
 
 public class ConstructionVolumeScript : MonoBehaviour
 {
-    public AudioClip constructionSFX;
-    public AudioSource soundPlayer;
-    public Slider slider;
+    public AudioClip constructionSFX; // An AudioClip containing construction noises
+    public AudioSource soundPlayer; // An AudioSource file to play the audio clip
+    public Slider slider; // A reference to the construction noises slider gameObject
 
-    // Update is called once per frame
     void Update()
     {
+        // sets the volume slider value to the sound player value as well
         soundPlayer.volume = slider.value;
 
+        // If the audioClip has stopped playing, then play it again.
         if (soundPlayer.isPlaying == false)
         {
             soundPlayer.PlayOneShot(constructionSFX);
